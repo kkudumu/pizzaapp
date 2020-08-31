@@ -1,19 +1,10 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
 import { Navbar } from './navbar/Navbar';
 import { Banner } from './banner/Banner';
 import { Menu } from './menu/Menu';
+import { GlobalStyle } from './styles/GlobalStyle';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-  }
 
-  h1, h2, h3 {
-    font-family: 'Righteous', cursive;
-  }
-`
 
 
 function App() {
@@ -23,7 +14,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Menu/>
-      <div>Hello Sliceline</div>
+      
     </>
   );
 }

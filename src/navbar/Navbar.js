@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { pizzaRed } from './../styles/colors';
-import { Title } from './../styles/title';
+import { pizzaRed } from '../Styles/Colors';
+import { Title } from '../Styles/Title';
 
 
 const NavbarStyled = styled.div`

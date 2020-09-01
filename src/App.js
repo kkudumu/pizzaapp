@@ -1,19 +1,21 @@
-import React from 'react';
-import { Navbar } from './navbar/Navbar';
-import { Banner } from './banner/Banner';
-import { Menu } from './menu/Menu';
-import { GlobalStyle } from './styles/GlobalStyle';
-
-
+import React, {useState} from 'react';
+import { Navbar } from './Navbar/Navbar';
+import { Banner } from './Banner/Banner';
+import { Menu } from './Menu/Menu';
+import { GlobalStyle } from './Styles/GlobalStyle';
+import { FoodDialog } from './FoodDialog/FoodDialog';
 
 
 function App() {
+  const [openFood, setOpenFood] = useState();
+
   return (
     <>
     <GlobalStyle/>
+      <FoodDialog openFood={openFood} setOpenFood={setOpenFood}/>
       <Navbar/>
       <Banner/>
-      <Menu/>
+      <Menu setOpenFood={setOpenFood}/>
       
     </>
   );

@@ -1,18 +1,18 @@
 import styled from 'styled-components';
-import { Title } from './../styles/title';
+import { Title } from '../Styles/Title';
 
 export const FoodGrid = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
 `
-export const FoodLabel = styled.div`
+export const FoodLabel = styled(Title)`
 position: absolute;
 background-color: rgba(256,256,256,0.8);
 padding: 5px;
 `
 
-export const Food = styled(Title)`
+export const Food = styled.div`
 height: 100px;
 font-size: 20px;
 border-radius: 7px;
